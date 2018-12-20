@@ -16,25 +16,25 @@ body
 
 /* unvisited link */
 a:link {
-    color: hotpink;
+    color: rgb(33, 116, 0);
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: hotpink;
-    text-decoration: none;
+    color: rgb(33, 116, 0);
+    text-decoration: underline;
 }
 
 /* mouse over link */
 a:hover {
-    color: hotpink;
-    text-decoration: none;
+    color: rgb(33, 116, 0);
+    text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: hotpink;
+    color: rgb(33, 116, 0);
     text-decoration: none;
 }
 
@@ -42,12 +42,21 @@ a:active {
 .top-of-page
 {
     /* it is the TOP */
+
+
+
     width: 100%;
     height: 100pt;
-    background-color: green;
+    background-color: rgb(0, 29, 192);
+    color: white;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: -100pt;
 
     z-index: 1;
 }
@@ -60,9 +69,8 @@ a:active {
 
     position: absolute;
     left: 0px;
-    width: 300px;
+    width: 50%;
     border: 3px solid #73AD21;
-    padding: 10px;
 }
 
 .right-TOP
@@ -73,7 +81,7 @@ a:active {
 
     position: absolute;
     right: 0px;
-    width: 300px;
+    width: 50%;
     border: 3px solid #73AD21;
     padding: 10px;
 }
@@ -81,13 +89,12 @@ a:active {
 .middle-TOP
 {
 
-    position: absolute;
-    border: 3px solid #73AD21;
+    position: relative;
     padding: 10px;
 
-    width: 300px;
+    width: 75%;
 
-    left: calc(50% - 150px);
+    left: 13.5%;
     text-align: center;
     justify-self: center;
 
@@ -95,9 +102,11 @@ a:active {
 
 .sticky-header
 {
+    color: white;
+
     width: 100%;
     
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(0, 183, 255);
     height: 40pt;
 
     position: sticky;
