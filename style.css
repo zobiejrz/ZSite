@@ -1,6 +1,6 @@
 body
 {
-
+    background-color: rgb(50, 50, 54);
     margin: 0%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -94,9 +94,16 @@ body
     
 }
 
+#container
+{
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
 #content
 {
-
+    background-color: transparent;
     position: relative;
     padding: 10px;
 
@@ -138,5 +145,76 @@ body
 
     color: rgb(44, 155, 1);
     text-decoration: underline;
+}
 
+#footer
+{
+    color: rgb(161, 161, 161);
+    background-color: rgb(50, 50, 54);
+    height: 100pt;
+    width: 100%;
+
+    align-content: center;
+    justify-content: baseline;
+
+}
+
+#left-footer
+{
+
+    float: left;
+    margin-left: 5pt;
+    top: 10pt;
+    font-size: 9pt;
+}
+
+#right-footer
+{
+    float: right;
+    margin-right: 5pt;
+    top: 10pt;
+}
+#right-footer ul
+{
+
+    display: flex;
+    top: 10pt;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#right-footer li
+{
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+    width: 20pt;
+    height: 20pt;
+
+    padding-left: 2pt;
+}
+
+#right-footer a:link
+{
+    background-color: transparent;
+}
+
+#right-footer a:hover
+{
+    background-color: rgb(69, 69, 69);
+    border-radius: 9pt;
+}
+
+#right-footer a:visited
+{
+    background-color: transparent;
+}
+
+#right-footer a:active
+{
+    background-color: rgb(69, 69, 69);
+    border-radius: 9pt;
 }
