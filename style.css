@@ -14,7 +14,6 @@ body
     position: -ms-sticky;
     position: -o-sticky;
     top: -100pt;
-
     z-index: 2;
 }
 
@@ -25,32 +24,25 @@ body
     height: 100pt;
     background-color: rgb(0, 29, 192);
     color: white;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #btm-header
 {
     color: white;
-
     width: 100%;
-    
     background-color: rgb(0, 183, 255);
     height: 40pt;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #btm-header ul
 {
     font-size: 20pt;
-
     padding: 2pt;
     display: flex;
     align-content: center;
@@ -61,10 +53,8 @@ body
 {
     justify-content: center;
     align-content: center;
-
     padding: 7pt 7pt;
     display: inline;
-    
 }
 
 #btm-header a:link
@@ -87,11 +77,9 @@ body
 
 #btm-header a:hover
 {
-
     background-color: rgb(0, 113, 158);
     text-decoration: none;
     border-radius: 7pt;
-    
 }
 
 #container
@@ -108,11 +96,9 @@ body
     padding: 10px;
 
     width: 75%;
-
     left: 13.5%;
     text-align: center;
     justify-self: center;
-
 }
 
 .left
@@ -122,10 +108,8 @@ body
 
 #content a:link
 {
-
     color: rgb(33, 116, 0);
     text-decoration: none;
-
 }
 
 #content a:active
@@ -142,7 +126,6 @@ body
 
 #content a:hover
 {
-
     color: rgb(44, 155, 1);
     text-decoration: underline;
 }
@@ -153,15 +136,12 @@ body
     background-color: rgb(50, 50, 54);
     height: 100pt;
     width: 100%;
-
     align-content: center;
     justify-content: baseline;
-
 }
 
 #left-footer
 {
-
     float: left;
     margin-left: 10pt;
     margin-top: 6pt;
@@ -177,11 +157,9 @@ body
 
 #right-footer ul
 {
-
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
 
 #right-footer li
@@ -216,4 +194,25 @@ body
 {
     background-color: rgb(69, 69, 69);
     border-radius: 9pt;
+}
+
+content #table
+{
+    color: white;
+    background-color: green;
+    height: auto;
+    width: 100%;
+    border: 1pt solid black;
+}
+content #tr
+{
+    height: 100pt;
+}
+
+content #td
+{
+    color: green;
+    background-color: blueviolet;
+    width: 25%;
+    border: 5pt solid black;
 }
