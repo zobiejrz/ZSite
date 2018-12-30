@@ -196,23 +196,27 @@ body
     border-radius: 9pt;
 }
 
-content #table
+#content table
 {
-    color: white;
-    background-color: green;
     height: auto;
     width: 100%;
-    border: 1pt solid black;
 }
-content #tr
+#content tr
 {
-    height: 100pt;
+    height: auto;
 }
 
-content #td
+#content td
 {
-    color: green;
-    background-color: blueviolet;
+    color: black;
+    background-color: transparent;
     width: 25%;
-    border: 5pt solid black;
+    border: 1pt solid black;
+}
+
+.hidden
+{
+    background-color: transparent !important;
+    color: transparent !important;
+    border: 1pt solid transparent !important;
 }
