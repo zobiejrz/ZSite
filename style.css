@@ -316,25 +316,21 @@ body
 
 a .text
 {
-    color: rgb(255, 0, 0);
     background-color: rgba(0, 0, 0, 0.383);
 }
 
 a:hover .text
 {
-    color: rgb(114, 12, 12);
     background-color: rgba(0, 0, 0, 0.500);
 }
 
 a:active .text
 {
-    color: rgb(247, 74, 74);
     background-color: rgba(0, 0, 0, 0.500);
 }
 
 a:visited .text
 {
-    color: rgb(216, 47, 47);
     background-color: rgba(0, 0, 0, 0.383);
 }
 
