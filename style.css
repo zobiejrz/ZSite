@@ -3,6 +3,7 @@ body
     background-color: rgb(50, 50, 54);
     margin: 0%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    image-orientation: from-image;
 }
 
 #header
@@ -264,7 +265,7 @@ body
 /* Next & previous buttons */
 .prev, .next
 {
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -391,3 +392,12 @@ a:visited .text
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+/* Thank you Mr. Gilbert *whew* */
+.rotateimg180 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
