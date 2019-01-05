@@ -394,7 +394,8 @@ a:visited .text
 }
 
 /* Thank you Mr. Gilbert *whew* */
-.rotateimg180 {
+.rotateimg180
+{
     -webkit-transform:rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
