@@ -1,64 +1,105 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html onresize="CheckSize()" onload="CheckSize()">
+<html>
 
-    <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="copyright" content="© 2019 Ben Zobrist" />
-            <meta name="description" content="" />
-            <meta name="keywords" content="ben zobrist, zobiejrz, programming, developer" />
-            <meta name="robots" content="index,follow" />
-            <meta name="author" content="Ben Zobrist" />
+<head>
+    <meta name="copyright" content="© 2019 Ben Zobrist" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="ben zobrist, zobiejrz, programming, developer, programmer" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Ben Zobrist" />
 
-        <title>Ben Zobrist</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    </head>
-    <body onresize="CheckSize()">
-        <div id="topbar"><a href="https://github.com/zobiejrz" target="_blank">Github</a> | <a href="https://twitter.com/zobiejrz" target="_blank">Twitter</a> | <a href="https://instagram.com/zobiejrz" target="_blank">Instagram</a></div>
-        <div id="navigation">
-            <div class="menu">
-                    <a href="#header"><div class="menu-item active-menu" onclick="selectMenuItem(0)">About</div></a>
-                    <a href="#projects"><div class="menu-item" onclick="selectMenuItem(1)">Projects</div></a>
+    <title>Ben Zobrist</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Ben Zobrist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="header" class="jumbotron" style="background: black">
+        <h1 class="display-3" style="font-family: 'Courier New', Courier, 'Lucida Sans Typewriter'; color: white">hello friend</h1>
+          <p class="lead" style="color: gray">I'm a college student and aspiring developer. I love programming, but I also play Ultimate Frisbee, I like dressing up, and I drink chocolate milk.</p>
+          <!-- <hr class="my-3"> -->
+          <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+
+    </div>
+    <div id="social"></div>
+    <div id="history"></div>
+    <div id="projects" style="padding: 20px;">
+        <div class="card-deck">
+            <div class="card" style="">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Discord Bot</h5>
+                    <p class="card-text">Written in C#, the Discord Bot 'Cooley' can make, store, and edit D&D character information.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                    <a href="#" class="btn btn-light btn-sm btn-block">Add to Discord</a>
+                </div>
+            </div>
+            <div class="card" style="">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ZCoder</h5>
+                    <p class="card-text">A text encoder that converts input into 1s and 0s.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                    <a href="#" class="btn btn-light btn-sm btn-block">Try Online</a>
+                </div>
+            </div>
+            <div class="card" style="">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">maeserflags</h5>
+                    <p class="card-text">A website to showcase flag designs made by another class at my school.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                    <a href="#" class="btn btn-light btn-sm btn-block">Visit</a>
+                </div>
             </div>
         </div>
-        <div id="header">
-            <div id="image-filler">[You get this instead of a photo.]</div>
-            <div class="title"><h1>> Ben Zobrist</h1></div>
-            <span>
-                <p>Hello, I like wearing hoodies and I also program things. </p>
-                <p>See some more about what I do below!</p>
-            </span>
-        </div>
-        <h2 class="title">Projects</h2>
-        <div id="projects" class="two">
-            <div id="item" onclick="GitLink('cooley')">
-                <img src="./img/Cooley.png">
-                <h4>Cooley</h4>
-                <p>Cooley is a discord bot that helps you play Dungeons and Dragons with friends! He stores character sheets and stats so you can listen to the Dungeon Master in the voice chat! Written in C#, Cooley keeps your character sheets in JSON for whenever you need them on your discord server!</p>
-            </div>
+    </div
+    <div id="skills"></div>
+    <div id="contact"></div>
 
-            <div id="item" onclick="GitLink('ZCoder')">
-                <img src="./img/ZCoderShowcase.jpg">
-                <h4>ZCoder</h4>
-                <p>My therapist told me I needed to start journaling to practice being vulnerable, so I wrote a program to loosely encrypt what I write. ZCoder is a Java project that converts the text in files to and from binary text, and my therapist says it was a great first step!</p>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-            <div id="item" onclick="GitLink('vexillology-website')">
-                <img src="./img/VexShowcase.png">
-                <h4>maeserflags.com</h4>
-                <p>This is a website that features flags designed by students at Karl G. Maeser Preperatory Academy in Lindon, UT in a Vexilology class. The website was designed by a team of students in a Web Design class, lead by yours truly, as our first group website.</p>
-            </div>
-        </div>
-        <div id="footer" class="one">
-            <div id="copyright"><p>© 2019 Ben Zobrist</p></div>
-        </div>
-        <script src="./script.js"></script>
+</body>
 
-    </body>
-    
 </html>
