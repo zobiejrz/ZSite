@@ -1,0 +1,36 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter';
+}
+
+.jumbotron .lead {
+    color: #b8b6c3;
+}
+
+.progress {
+    width: 50%;
+    height: 25px;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+#projects {
+    padding: 20px;
+}
+
+#skills {
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#skills #header {
+    grid-column: 1 4;
+}
+
+#skills .progress {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
