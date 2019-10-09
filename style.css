@@ -1,6 +1,31 @@
+body {
+    position: relative;
+}
+
+#projects {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4px
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#skills #header {
+    grid-column: 1 / 4;
+}
+
+#skills .progress {
+    grid-column: 2 / 3;
+}
+
 .jumbotron {
     background-color: black;
     color: white;
+    border-radius: 0pt;
 }
 
 .jumbotron h1 {
@@ -12,25 +37,7 @@
 }
 
 .progress {
-    width: 50%;
+    width: 100%;
     height: 25px;
-    margin-top: 10pt;
-    margin-bottom: 10pt;
-}
-
-#projects {
-    padding: 20px;
-}
-
-#skills {
-    grid-template-columns: 1fr 3fr 1fr;
-}
-
-#skills #header {
-    grid-column: 1 4;
-}
-
-#skills .progress {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    margin: 20px;
 }
