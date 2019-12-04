@@ -1,64 +1,167 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 
-<html onresize="CheckSize()" onload="CheckSize()">
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="© 2019 Ben Zobrist" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="ben zobrist, zobiejrz, programming, developer, programmer, zobrist, byu, brigham young university" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Ben Zobrist" />
+    <meta name=" viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="copyright" content="© 2019 Ben Zobrist" />
-            <meta name="description" content="" />
-            <meta name="keywords" content="ben zobrist, zobiejrz, programming, developer" />
-            <meta name="robots" content="index,follow" />
-            <meta name="author" content="Ben Zobrist" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-        <title>Ben Zobrist</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <title>Ben Zobrist</title>
+</head>
 
-
-    </head>
-    <body onresize="CheckSize()">
-        <div id="topbar"><a href="https://github.com/zobiejrz" target="_blank">Github</a> | <a href="https://twitter.com/zobiejrz" target="_blank">Twitter</a> | <a href="https://instagram.com/zobiejrz" target="_blank">Instagram</a></div>
-        <div id="navigation">
-            <div class="menu">
-                    <a href="#header"><div class="menu-item active-menu" onclick="selectMenuItem(0)">About</div></a>
-                    <a href="#projects"><div class="menu-item" onclick="selectMenuItem(1)">Projects</div></a>
+<body data-spy="scroll" data-target="nav" data-offset="60">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Ben Zobrist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home">
+        <div id="header" class="jumbotron">
+            <h1 class="display-3">hello friend</h1>
+            <p class="lead">I'm a college student and aspiring developer.<br>I enjoy programming, but I also love Ultimate Frisbee, cool clothing, and chocolate milk.</p>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Twitter By Ben Zobrist</h5>
+                    <p class="card-text">A Twitter client written in Python. As it is used it will generate statistics for your tweets and engagement.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-sm btn-block disabled" download>Download</a>
+                    <a href="https://github.com/zobiejrz/twitter-by-ben-zobrist" target="_blank" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Ping Pong</h5>
+                    <p class="card-text">A game of ping pong written in Swift for Mac.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-sm btn-block disabled" download>Download (Mac Only)</a>
+                    <a href="https://github.com/zobiejrz/ping-pong" target="_blank" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Discord Bot</h5>
+                    <p class="card-text">Written in C#, the Discord Bot 'Cooley' can make, store, and edit D&D character information.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-sm btn-block disabled">Add to Discord</a>
+                    <a href="https://github.com/zobiejrz/cooley" target="_blank" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                </div>
             </div>
         </div>
-        <div id="header">
-            <div id="image-filler">[You get this instead of a photo.]</div>
-            <div class="title"><h1>> Ben Zobrist</h1></div>
-            <span>
-                <p>Hello, I like wearing hoodies and I also program things. </p>
-                <p>See some more about what I do below!</p>
-            </span>
-        </div>
-        <h2 class="title">Projects</h2>
-        <div id="projects" class="two">
-            <div id="item" onclick="GitLink('cooley')">
-                <img src="./img/Cooley.png">
-                <h4>Cooley</h4>
-                <p>Cooley is a discord bot that helps you play Dungeons and Dragons with friends! He stores character sheets and stats so you can listen to the Dungeon Master in the voice chat! Written in C#, Cooley keeps your character sheets in JSON for whenever you need them on your discord server!</p>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ZCoder</h5>
+                    <p class="card-text">A Java text encoder that converts input into 1s and 0s.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-sm btn-block disabled">Try Online</a>
+                    <a href="https://github.com/zobiejrz/ZCoder" target="_blank" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                </div>
             </div>
-
-            <div id="item" onclick="GitLink('ZCoder')">
-                <img src="./img/ZCoderShowcase.jpg">
-                <h4>ZCoder</h4>
-                <p>My therapist told me I needed to start journaling to practice being vulnerable, so I wrote a program to loosely encrypt what I write. ZCoder is a Java project that converts the text in files to and from binary text, and my therapist says it was a great first step!</p>
+            <div class="card">
+                <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">maeserflags</h5>
+                    <p class="card-text">A website to showcase flag designs made by another class at my school.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://maeserflags.com" target="_blank" class="btn btn-light btn-sm btn-block">Visit</a>
+                    <a href="https://github.com/zobiejrz/vexillology-website" target="_blank" class="btn btn-dark btn-block"><img src="./img/github.png" height="30px" width="30px"></a>
+                </div>
             </div>
-
-            <div id="item" onclick="GitLink('vexillology-website')">
-                <img src="./img/VexShowcase.png">
-                <h4>maeserflags.com</h4>
-                <p>This is a website that features flags designed by students at Karl G. Maeser Preperatory Academy in Lindon, UT in a Vexilology class. The website was designed by a team of students in a Web Design class, lead by yours truly, as our first group website.</p>
+            <div class="card">
+                <!-- <img class="card-img-top" src="./img/ComingSoon.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">NULL</h5>
+                    <p class="card-text">NULL</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-dark btn-block">NULL</a>
+                    <a class="btn btn-light btn-sm btn-block">NULL</a>
+                </div> -->
             </div>
         </div>
-        <div id="footer" class="one">
-            <div id="copyright"><p>© 2019 Ben Zobrist</p></div>
+    </div>
+    <div id="skills">
+        <div id="header" class="jumbotron">
+            <h1 class="display-4">skills</h1>
+            <p class="lead">
+            </p>
         </div>
-        <script src="./script.js"></script>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Swift</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">C#</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">C++</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">Java</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">SQL</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" title="I know my strengths." role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Drinking Chocolate Milk</div>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="header" class="jumbotron">
+            <h1 class="display-4">contact</h1>
+            <p class="lead">
+            </p>
+        </div>
+    </div>
 
-    </body>
-    
+    <div id="footer" class="container-fluid">
+        © 2019 Ben Zobrist
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
